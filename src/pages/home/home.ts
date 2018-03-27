@@ -11,4 +11,12 @@ export class HomePage {
 
   }
 
+  CommandNoImageClass(n) {
+    var element = document.getElementById("image" + n);
+    if(element.className.indexOf("noImage") > -1) {
+      element.className = element.className.replace(/\bnoImage\b/g, "");
+    } else {
+      element.className += element.className ? ' noImage' : 'noImage';
+    }
+  }
 }

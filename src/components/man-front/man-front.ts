@@ -18,7 +18,7 @@ export class ManFrontComponent {
 
   constructor() {
     console.log('Hello ManFrontComponent Component');
-    this.text = 'ManFront Component';
+    this.text = 'Push me to update my parent';
   }
 
   updateParents(){

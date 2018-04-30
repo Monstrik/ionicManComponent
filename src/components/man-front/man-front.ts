@@ -21,8 +21,8 @@ export class ManFrontComponent {
     this.text = 'Push me to update my parent';
   }
 
-  updateParents(){
-    this.valueUpdate.emit('something updated');
+  updateParents($event){
+    this.valueUpdate.emit($event);
   }
 
 
